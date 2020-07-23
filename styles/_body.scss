@@ -133,8 +133,10 @@ body {
     height: auto;
     text-align: center;
     // background-color: seagreen;
-    
+}
 
+.bold {
+    font-weight: $font-bold;
 }
 
 .email-illustration-success {

@@ -141,6 +141,10 @@ body {
   text-align: center;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .email-illustration-success {
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
