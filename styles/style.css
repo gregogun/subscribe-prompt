@@ -154,6 +154,8 @@ body {
 }
 
 .subscribe__text--body {
+  margin: auto;
+  width: 90vw;
   line-height: 1.25rem;
 }
 
@@ -261,28 +263,74 @@ body {
 }
 
 .agreement {
-  cursor: pointer;
   width: 80%;
   margin: 0 auto;
+  padding: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.checkbox-container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
-.agreement input {
-  border: 0;
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  top: -2px;
+  left: 4px;
+  border: 1px solid #222;
+  border-radius: 1px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type='checkbox']::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+input[type='checkbox']:checked {
+  background-color: #3D9FFF;
+  border: none;
+}
+
+input[type='checkbox']:checked::after {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid 1px #f8f8f8;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .agreement__checkbox {
   margin-right: 8px;
+}
+
+.agreement__text {
+  margin-left: 8px;
 }
 
 .email-illustration {
@@ -332,6 +380,9 @@ body {
   .container {
     margin-top: 5vh;
     width: 80vw;
+  }
+  .subscribe__text--body {
+    width: 100%;
   }
   .email-illustration {
     margin-right: 5vw;

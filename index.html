@@ -15,7 +15,7 @@
     
             <h2 class="subscribe__text subscribe__text--header">Let's keep in touch</h2>
     
-            <p class="subscribe__text subscribe__text--body">Subscribe to keep up with fresh news and exciting updates <br> We promise not to spam you!</p>
+            <p class="subscribe__text subscribe__text--body">Subscribe to keep up with fresh news and exciting updates <br> We promise never to spam you!</p>
             
             <div class="input-button-container">
                 <form action="|" required>
@@ -38,11 +38,13 @@
 
             <p class="subscribe__text subscribe-response"></p>
     
-            <label class="agreement">
-                <input class="agreement__checkbox" type="checkbox" onclick="checkboxChange(this)" name="agree" id="agreed">
-                <span class="checkmark"></span> 
+            <div class="agreement">
+                <label class="checkbox-container">
+                    <input class="agreement__checkbox" type="checkbox" onclick="checkboxChange(this)" name="agree" id="agreed">
+                    <span class="checkmark"></span> 
+                </label>
                 <p class="subscribe__text agreement__text">I agree to my <span class="bold">fake</span> gmail address <span class="bold">not</span> being stored and used to receive <span class="bold">a non-existent</span> monthly newsletter.</p>
-            </label>
+            </div>
     
         </div>
 
