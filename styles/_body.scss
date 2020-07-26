@@ -18,7 +18,8 @@ body {
 .subscribe {
     width: 100%;
     height: 100%;
-    padding-top: 25px;
+    padding-top: 48px;
+    margin-bottom: 64px;
     // background-color: royalblue;
 }
 
@@ -127,11 +128,17 @@ body {
 
 
 .agreement {
+    cursor: pointer;
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-     
+    user-select: none;
+    
+    input {
+        border: 0;
+        outline: none;
+    }
 }
 
 .agreement__checkbox {
