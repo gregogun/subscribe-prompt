@@ -10,17 +10,15 @@ body {
 .container {
     margin: 0 auto;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     object-fit: cover;
-    // background-color: red;
 }
 
 .subscribe {
     width: 100%;
     height: 100%;
     padding-top: 48px;
-    margin-bottom: 64px;
-    // background-color: royalblue;
+    margin-bottom: 8px;
 }
 
 
@@ -190,16 +188,14 @@ body {
     margin-left: 8px;
 }
 
+
 .email-illustration {
     fill: $primary-dark;
-    min-width: 300px;
-    min-height: 300px;
     display: block;
     margin: auto;
     width: 90%;
     height: auto;
     text-align: center;
-    // background-color: seagreen;
 }
 
 .bold {
@@ -237,8 +233,8 @@ body {
 
 @media screen and (min-width: 768px) {
     .container {
-        margin-top: 5vh;
         width: 80vw;
+        height: 50vh;
     }
 
     .subscribe__text--body {
